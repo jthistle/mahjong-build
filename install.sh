@@ -5,6 +5,6 @@ mv ./mahjong-front ./mahjong-back/client
 cd ./mahjong-back
 yarn
 
-cd ./mahjong-front
+cd ./client
 yarn
 

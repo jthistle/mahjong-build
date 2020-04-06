@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 
-
-mv ./mahjong-front ./mahjong-back/client/
-cd ./mahjong-back/client/
+cd ./mahjong-front
 yarn build
+cd ../
+
+mv ./mahjong-front/build ./mahjong-front/client
+cp ./mahjong-front/client ./mahjong-back/src/
+rm -rf ./mahjong-front
 
 # Prepare for deploy
 shopt -s dotglob nullglob
-rm .git/ -rf
-cd ../
 rm .git/ -rf
 cd ../
 rm .git/ -rf

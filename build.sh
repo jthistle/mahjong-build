@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-cd ./mahjong-back/front/
+cd ./mahjong-back/client/
 yarn build
-
-cd ../

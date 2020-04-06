@@ -2,8 +2,11 @@ language: node_js
 node_js:
   - 10
 
-install: ./install.sh
+install: "./install.sh"
+script: "./build.sh"
 
-script: ./build.sh
-
-#deploy: # TODO
+deploy:
+  provider: heroku
+  api_key:
+    secure: rGPT7I7k0vLkiA4pDq+MlmSaotnbapp4uGkAaqWO9NuQihf1KBbYSe+bwemI0nzjdGh2UQd91J7lj06TTi2crrMX4Ks4bKu3ACp/HPYpRjT6X5QaERC0yppSGrQtYR4yp2kM74py8JQrDfX38QKcyixetyBAIovi6nA67te3R3+Mkmqle72XxsWO8EESsTGYk7uh4bqxhkc2NSWlAaxLt7df4zAuvHSGlG/oR2GoUCptf8GL5c6W4ME6q9PiLH4zsIxPfbGkiBxDaKN6AMIc9BKnrerECzYL72c365ysPz/ZCSTqPcVj4meJr7xqQAi0YNRWlJtX2Tj1LE6adozqeXxkjA4m/DzLT3O9DcbEAUQfGkIiyaZNNNli0T5DwGIJOM96J3v1y8gkILfcNwd1X5jTu8+kp2qiCoLF2JMYEH2lRVhrxZ7O6iO2b0enOqpYoNbH6IIf2KUTTOjH+ljsptwIw4E2R+e9fk0hZzTArW3abzRf9q85WRA8IqIm5Qj17FRXOM5KKincifYM7SF1yR9NnRQ0Oyx3Cgstg4iokTAK4e0MhIHDKUO03nhbWMuiae9vcLalcL68Dwp6o4uTV65Qnqfl35CE13WR0xY87aV7U9F8bKHkqclZvATQdacKOCfE/LIu2b/5Yq7erNjxzoz4s2kXMIkfyyTUMQAOQjU=
+  app: mahjong-online

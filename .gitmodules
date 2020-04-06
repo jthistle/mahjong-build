@@ -1,0 +1,6 @@
+[submodule "mahjong-back"]
+	path = mahjong-back
+	url = git@github.com:jthistle/mahjong-back.git
+[submodule "mahjong-front"]
+	path = mahjong-front
+	url = git@github.com:jthistle/mahjong-front.git

@@ -2,4 +2,4 @@ install: ./install.sh
 
 script: ./build.sh
 
-deploy: # TODO
+#deploy: # TODO

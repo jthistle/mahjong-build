@@ -12,7 +12,8 @@ rm -rf ./mahjong-front
 shopt -s dotglob nullglob
 rm .git/ -rf
 rm .gitmodules
-if [ -d "./node_modules/"]; then
+if [ -d "./node_modules/" ]; then
+    ls  # debug
     # I don't know how node_modules gets here, but it can cause problems
     rm -rf ./node_modules
 fi
